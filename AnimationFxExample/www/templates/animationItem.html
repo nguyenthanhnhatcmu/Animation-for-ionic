@@ -1,0 +1,11 @@
+<ion-view view-title="AnimationItem">
+    <ion-content>
+        <h1>AnimationItem</h1>
+        <div ng-class="returnAnimation()" ng-repeat="car in carsDemo">
+            <div class="item" style="height: 110px" >
+                <img ng-src="{{car.pictureCar}}" alt="Mountain View" style="width:100px;height:70px;">
+                <div>{{car.descriptionCar}}</div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

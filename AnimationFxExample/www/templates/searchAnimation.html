@@ -1,0 +1,17 @@
+<ion-view view-title="Search Animation">
+    <ion-content style="background-color:floralwhite;">
+        <div class="well" style="margin-top: 30px;">
+                <div class="form-search">
+                    <div class="input-append">
+                        <input type="text" ng-model="search" class="search-query col col-75" style=" border:azure; float :left; background-color: bisque;">
+                        <button  type="submit" class="btn col col-25" >Search</button>
+                    </div>
+                    <ul class="nav nav-pills nav-stacked" style="margin-top: 20px;">
+                        <li class="animate" ng-repeat="name in newCars | filter:search">
+                            <div class="item"> {{name}}</div>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </ion-content>
+</ion-view>

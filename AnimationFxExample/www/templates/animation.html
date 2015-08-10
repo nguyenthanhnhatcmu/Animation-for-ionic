@@ -1,0 +1,10 @@
+<ion-view view-title="Animation">
+    <ion-content>
+        <h1>Animation</h1>
+        <div ng-repeat="animation in demoAnimations">
+            <div class="item">
+                <div ng-click="gotoAnimationItem(animation)">{{animation}}</div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
